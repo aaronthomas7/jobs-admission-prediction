@@ -38,4 +38,5 @@ def predict():
     
     return render_template('index.html', prediction_text='Your Predicted College is: {}'.format(clg_name.to_string(index=False))) # rendering the predicted result
 
-app.run(host='localhost', port=5000, debug=True)
+if __name__ == "__main__":
+    app.run(debug=True)
